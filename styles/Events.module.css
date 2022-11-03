@@ -1,0 +1,42 @@
+/* Events */
+.events {
+    padding:2rem;
+    text-align: center;
+}
+
+/* Event Item */
+
+.event { 
+    min-height:4rem; 
+    padding:2rem 0rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} 
+
+.event h3 {
+    padding-bottom:1rem;
+}
+
+.event p {
+    padding-bottom:1rem;
+}
+
+/* Full Page Event */
+
+.fullEvent {
+    text-align: center;
+    padding:2rem;
+}
+
+.fullEvent p {
+    padding-bottom:1rem;
+}
+
+
+@media screen and (min-width: 768px) {
+    .fullEvent p {
+        width:60%; 
+    }
+}

@@ -1,0 +1,35 @@
+.services {
+    background:#efefef;
+    min-height:100vh;
+    display:flex;
+    flex-direction: column;
+    padding:4rem 0;
+}
+
+.service {
+    flex:1;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    text-align:center;
+    color:black;
+    padding:2rem;
+}
+
+@media screen and (min-width: 768px) {
+
+    .services {
+        flex-direction: row;
+        justify-content:space-evenly;  
+    }
+
+    .service {
+        flex:1;
+        display:flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: top;
+        text-align: center;
+        color:black;
+    }
+}

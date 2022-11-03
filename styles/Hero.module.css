@@ -1,0 +1,16 @@
+.hero {
+   height:90vh;
+}
+
+.hero h1 {
+    padding:1rem;
+    font-size:2.5rem;
+}
+
+@media screen and (min-width: 768px) {
+    .hero {
+        min-height:98vh;
+        background:white;
+    }
+
+}

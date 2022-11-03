@@ -1,0 +1,33 @@
+.nav { 
+    height:10vh;
+    background:white;
+    text-align: right;
+    padding:1rem;
+}
+
+.nav h3 {
+    display:none;
+    padding:0rem;
+}
+
+.nav button {
+    background-color: white;
+    border: 0.1rem black solid;
+    border-radius: 4px;
+    padding:0.5rem 1rem;
+}
+
+.nav button:hover {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    .nav h3 {
+        display:unset;
+        padding-top:1vh;
+        padding-left:0.5rem;
+        font-family:'Roboto', sans-serif;
+        font-size: 1.5rem;
+        color: orange;
+    }
+}
