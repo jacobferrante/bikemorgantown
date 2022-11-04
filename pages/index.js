@@ -18,7 +18,7 @@ export default function home({ events, services }) {
 
 
 export const getServerSideProps = async () => {
-    const res = await fetch(`${server}/services`)
+    const res = await fetch(`${server}/service`)
     const res1 = await fetch(`${server}/event?filter[dateTime][_gt]=$NOW&limit=3&sort[]=-dateTime`)
     const data = await res.json()
     const data2 = await res1.json()
