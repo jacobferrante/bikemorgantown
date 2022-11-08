@@ -1,6 +1,7 @@
 import Hero from '../components/Hero'
 import Services from '../components/Services'
 import Events from '../components/Events'
+import Footer from '../components/Footer'
 import { server } from '../config'
 import styles from '../styles/Home.module.css'
 
@@ -9,8 +10,12 @@ export default function home({ events, services }) {
       <>      
       
         <Hero /> 
+        
         <Services services={services} />
-        <Events events={events} /> 
+
+        <Events events={events} />
+
+        <Footer />
 
       </> 
   )

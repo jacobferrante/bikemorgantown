@@ -1,1 +1,1 @@
-export const server = 'https://bikemotown.com/items'
+export const server = 'https://admin.bikemgtwn.com/items'

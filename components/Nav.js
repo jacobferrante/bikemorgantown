@@ -1,9 +1,16 @@
 import styles from '../styles/Nav.module.css'
+import Link from 'next/link'
 
 export default function Nav() {
   return (
     <nav className={styles.nav}>
-        <h3>BikeMorgantown</h3>
+        <ul>
+          <Link href="/"><li>Home</li></Link>
+          <Link href="about"><li>About</li></Link>
+          <Link href="/"><li>Events</li></Link>
+          <Link href="/"><li>Routes</li></Link>
+          <Link href="/"><li>Resources</li></Link>
+        </ul>
         <button>Menu</button>
     </nav>
   ) 

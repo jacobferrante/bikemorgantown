@@ -1,16 +1,67 @@
 .hero {
-   height:90vh;
-}
+   min-height:100vh;
+   display: flex;
+ }
 
 .hero h1 {
-    padding:1rem;
     font-size:2.5rem;
 }
 
+.heroImage {
+    display:none;
+}
+
+
+/* Tablet */
+
 @media screen and (min-width: 768px) {
+    .heroImage {
+        display:unset;
+        max-width:400px;
+        max-height:600px;
+    }
+}
+
+/* Older Desktop / Laptop */
+
+@media screen and (min-width: 1268px) {
+
     .hero {
-        min-height:98vh;
-        background:white;
+        min-height:100vh;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .hero img {        
+        border-radius: 24px;
+        max-width:400px;
+        max-height:600px;
+    }
+
+    .heroText {
+        display:flex;
+    }
+
+}
+
+/* Desktop */
+
+@media screen and (min-width: 1768px) {
+
+    .hero {
+       padding: 0 10rem; 
+    }
+
+    .hero img {
+        max-width: 600px;
+        max-height:800px;
+    }
+
+    .hero h1 {
+        font-size:5rem;
+        padding: 0 4rem;
+        text-align: center;
+   
     }
 
 }

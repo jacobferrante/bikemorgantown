@@ -1,13 +1,15 @@
+/* Mobile */
+
 .nav { 
     height:10vh;
     background:white;
-    text-align: right;
-    padding:1rem;
+    text-align: center;
+    width:100vw;
+    padding-top:1rem;
 }
 
-.nav h3 {
+.nav ul {
     display:none;
-    padding:0rem;
 }
 
 .nav button {
@@ -22,12 +24,43 @@
 }
 
 @media screen and (min-width: 768px) {
-    .nav h3 {
-        display:unset;
-        padding-top:1vh;
-        padding-left:0.5rem;
-        font-family:'Roboto', sans-serif;
-        font-size: 1.5rem;
-        color: orange;
+    .nav {
+        padding:0.5rem;
+        position:absolute;
+        left:0;
+        right:0;
     }
+
+    .nav button {
+        display:none;
+
+    }
+
+    .nav ul {
+        display:unset;
+    }
+
+    .nav ul {
+        list-style-type: none;
+    }    
+
+    .nav ul li {
+        display:inline;
+        font-size:1.5rem;
+        padding:0.5rem;
+    }
+
+    .nav a {
+        text-decoration: none;
+        color:inherit;
+    }
+}
+
+@media screen and (min-width: 1268px ) {
+
+}
+
+@media screen and (min-width: 1768px) { 
+
+
 }

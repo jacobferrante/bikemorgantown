@@ -19,7 +19,7 @@
 @media screen and (min-width: 768px) {
 
     .services {
-        flex-direction: row;
+        flex-direction: column;
         justify-content:space-evenly;  
     }
 
@@ -32,4 +32,15 @@
         text-align: center;
         color:black;
     }
+}
+
+@media screen and (min-width: 1268px) {
+   .services {
+    flex-direction: row;
+    justify-content: space-evenly;
+   } 
+}
+
+@media screen and (min-width: 1768px) {
+
 }

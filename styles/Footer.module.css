@@ -1,0 +1,40 @@
+.footer {
+    height:25vh;
+    background: #efefef;
+}
+
+
+@media screen and (min-width: 1768px) { 
+
+    .nav {
+        padding:0.5rem;
+        position:absolute;
+        left:0;
+        right:0;
+    }
+
+    .nav button {
+        display:none;
+
+    }
+
+    .nav ul {
+        display:unset;
+    }
+
+    .nav ul {
+        list-style-type: none;
+    }    
+
+    .nav ul li {
+        display:inline;
+        font-size:1.5rem;
+        padding:0.5rem;
+    }
+
+    .nav a {
+        text-decoration: none;
+        color:inherit;
+    }
+
+}
