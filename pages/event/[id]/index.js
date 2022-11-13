@@ -9,7 +9,7 @@ export default function event({event}) {
     <h2>{event.dateTime}</h2>
     <h3>{event.location}</h3>
     <p>{event.description}</p>
-    <Link href="/">
+    <Link href="/#events">
     <button>Go Back</button>
     </Link>
     </div>
