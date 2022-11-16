@@ -1,5 +1,5 @@
 .container {
-    background:#efefef;
+    background:#EFEFEF; 
     min-height:100vh;
     display:flex;
     align-items:center;
@@ -9,7 +9,10 @@
     display:flex;
     flex-direction: column;
     padding:2rem 2rem;
-    gap:2rem;
+}
+
+.service {
+    padding:2rem 0;
 }
 
 .service {
@@ -17,7 +20,11 @@
     display:flex;
     flex-direction: column;
     text-align:center;
-    color:black;
+    color:#303030;
+}
+
+.service p {
+    font-size:1.5rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -31,7 +38,6 @@
         display:flex;
         flex-direction: column;
         text-align: center;
-        color:black;
     }
 }
 
@@ -39,11 +45,16 @@
 .services {
     flex-direction: row;
 }
+
+.services p {
+    padding: 0 2rem;
+}
 }
 
 @media screen and (min-width: 1768px) {
     .services p {
         padding: 0 3rem;
+        font-size:1.75rem;
     }
 
 }

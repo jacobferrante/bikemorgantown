@@ -12,6 +12,7 @@
     flex-direction:row;
     align-items: center;
     justify-content: center;
+    color:rgb(48, 48, 48);
 }
 
 .hero h1 {
@@ -23,6 +24,10 @@
     display:none;
 }
 
+
+.coloredText {
+    color:#F0775E;
+}
 
 /* Tablet */
 
@@ -36,6 +41,7 @@
         max-width:300px;
         max-height:500px;
         border-radius: 24px;
+        filter: drop-shadow(0.25rem 0.25rem 0.25rem #7a7a7a);
     }
 
     .hero h1 {

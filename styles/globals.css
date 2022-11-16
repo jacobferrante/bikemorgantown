@@ -39,12 +39,14 @@ p {
 }
 
 button {
+    font-size:1rem;
     padding:1rem;
     text-transform: uppercase;
     border: none;
     font-weight:bold;
     letter-spacing: 0.1rem;
-    background: #efefef;
+    background: #1D3D60;
+    color:#F0775E;
 }
     
 

@@ -9,7 +9,7 @@ export default function Hero() {
         
         <div className={styles.heroText}>
           <h1>
-            BikeMorgantown is a community powered resource, providing what you need to enjoy cycling in the Morgantown area.
+            <span className={styles.coloredText}>BikeMorgantown</span> is a community powered resource, providing what you need to <span className={styles.coloredText}>enjoy cycling </span> in the Morgantown area.
           </h1>
         </div>
        

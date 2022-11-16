@@ -5,15 +5,18 @@
     left:0;
     right:0; 
     height:10vh;
-    background: rgba(255, 255, 255, 0);
+    background:rgba(29, 61, 96, o) ;
     text-align: center;
     width:100vw;
     padding-top:1rem;
+    color:rgb(48, 48, 48);
+
 }
 
 .nav ul {
     display:none;
     opacity: unset;
+    font-weight: bold;
 }
 
 .nav button {
