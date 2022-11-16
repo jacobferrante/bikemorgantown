@@ -1,8 +1,11 @@
 /* Mobile */
 
-.nav { 
+.nav {
+    position:absolute;
+    left:0;
+    right:0; 
     height:10vh;
-    background:white;
+    background: rgba(255, 255, 255, 0);
     text-align: center;
     width:100vw;
     padding-top:1rem;
@@ -10,6 +13,7 @@
 
 .nav ul {
     display:none;
+    opacity: unset;
 }
 
 .nav button {
@@ -24,12 +28,6 @@
 }
 
 @media screen and (min-width: 768px) {
-    .nav {
-        padding:0.5rem;
-        position:absolute;
-        left:0;
-        right:0;
-    }
 
     .nav button {
         display:none;

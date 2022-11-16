@@ -1,10 +1,22 @@
+.container {
+    min-height:100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .hero {
-   min-height:100vh;
-   display: flex;
- }
+    width:100vw;
+    text-align: center;
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+}
 
 .hero h1 {
     font-size:2.5rem;
+    padding: 0 2rem;
 }
 
 .heroImage {
@@ -15,10 +27,19 @@
 /* Tablet */
 
 @media screen and (min-width: 768px) {
+    .hero {
+        width:90vw;
+    }
+    
     .heroImage {
         display:unset;
-        max-width:400px;
-        max-height:600px;
+        max-width:300px;
+        max-height:500px;
+        border-radius: 24px;
+    }
+
+    .hero h1 {
+        font-size:2.5rem;
     }
 }
 
@@ -27,9 +48,12 @@
 @media screen and (min-width: 1268px) {
 
     .hero {
-        min-height:100vh;
-        flex-direction: row;
-        align-items: center;
+        width:80vw;
+    }
+
+    .hero h1 {
+        font-size: 4rem;
+        text-align: center;
     }
 
     .hero img {        
@@ -37,31 +61,20 @@
         max-width:400px;
         max-height:600px;
     }
-
-    .heroText {
-        display:flex;
-    }
-
 }
 
 /* Desktop */
 
 @media screen and (min-width: 1768px) {
 
-    .hero {
-       padding: 0 10rem; 
-    }
 
     .hero img {
-        max-width: 600px;
-        max-height:800px;
+        max-width: 500px;
+        max-height:700px;
     }
 
     .hero h1 {
         font-size:5rem;
-        padding: 0 4rem;
-        text-align: center;
-   
     }
 
 }

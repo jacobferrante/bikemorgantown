@@ -7,9 +7,9 @@ export default function Nav() {
         <ul>
           <Link href="/"><li>Home</li></Link>
           <Link href="about"><li>About</li></Link>
-          <Link href="/"><li>Events</li></Link>
-          <Link href="/"><li>Routes</li></Link>
-          <Link href="/"><li>Resources</li></Link>
+          <Link href="events"><li>Events</li></Link>
+          <Link href="routes"><li>Routes</li></Link>
+          <Link href="resources"><li>Resources</li></Link>
         </ul>
         <button>Menu</button>
     </nav>

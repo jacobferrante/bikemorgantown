@@ -1,4 +1,5 @@
 import Nav from './Nav'
+import Footer from './Footer'
 import styles from '../styles/Layout.module.css'
 import Head from 'next/head'
 
@@ -10,6 +11,7 @@ export default function Layout({ children }) {
     </Head>
     <Nav /> 
         {children}
+    <Footer />
     </>
   ) 
 }

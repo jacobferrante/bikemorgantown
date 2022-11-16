@@ -2,6 +2,7 @@ import styles from '../styles/Services.module.css'
 
 export default function Services({services}) {
   return (
+    <section className={styles.container}>
       <div className={styles.services}>     
         {services.map((service) => (
           <div className={styles.service}>
@@ -11,5 +12,6 @@ export default function Services({services}) {
           </div>
         ))} 
       </div>
+    </section>
     ) 
 }

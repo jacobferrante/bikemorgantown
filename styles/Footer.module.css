@@ -1,10 +1,23 @@
 .footer {
-    height:25vh;
+    height:50vh;
     background: #efefef;
 }
 
+@media screen and (min-width: 768px) {
+    .footer {
+        height:40vh;
+    }
+}
+
+@media screen and (min-width: 1268px) {
+
+}
 
 @media screen and (min-width: 1768px) { 
+
+    .footer {
+        height:25vh;
+    }
 
     .nav {
         padding:0.5rem;

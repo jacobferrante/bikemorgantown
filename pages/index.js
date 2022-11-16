@@ -12,10 +12,7 @@ export default function home({ events, services }) {
         <Hero /> 
         
         <Services services={services} />
-
         <Events events={events} />
-
-        <Footer />
 
       </> 
   )

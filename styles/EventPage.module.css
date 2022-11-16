@@ -1,0 +1,25 @@
+.container {
+    padding:4rem 0;
+    display:flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.events {
+    width:50vw;
+}
+
+.events p {
+    padding:2rem 0;
+}
+
+.events h3 {
+    padding-bottom:0;
+}
+
+.events h4 {
+    font-size: 1.5rem;
+}
