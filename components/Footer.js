@@ -7,13 +7,12 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.social}>
-       <i className={"fa-brands fa-instagram"}></i> 
-       <i className={"fa-brands fa-facebook"}></i> 
+       <a href="https://www.instagram.com/bikemgtwn/"><i className={"fa-brands fa-instagram"}></i></a> 
+       <a href="https://www.facebook.com/BikeMorgantown"><i className={"fa-brands fa-facebook"}></i></a> 
       </div>
       <nav className={styles.nav}>
         <ul>
           <Link href="/"><li>Home</li></Link>
-          <Link href="about"><li>About</li></Link>
           <Link href="events"><li>Events</li></Link>
           <Link href="routes"><li>Routes</li></Link>
           <Link href="resources"><li>Resources</li></Link>
