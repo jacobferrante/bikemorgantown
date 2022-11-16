@@ -3,6 +3,7 @@
 
 body {
     overflow-x: hidden;
+    color:#303030;
 }
 
 *,
@@ -45,10 +46,13 @@ button {
     border: none;
     font-weight:bold;
     letter-spacing: 0.1rem;
-    background: #1D3D60;
     color:#F0775E;
+    border-radius:12px;
 }
-    
+
+button:hover {
+    cursor: pointer;
+}
 
 @media screen and (min-width: 768px) {
     h1 {

@@ -1,7 +1,7 @@
 import Event from "./Event";
 import styles from "../styles/Events.module.css";
 
-export default function Events({ events }) {
+export default function Events({ events, dateStr }) {
   return (
     <section className={styles.container}>
       <div className={styles.events} id="events">
@@ -14,7 +14,6 @@ export default function Events({ events }) {
             return <Event event={event} /> 
           })}
         
-
         </div>
       </div>
     </section>

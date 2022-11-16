@@ -27,6 +27,15 @@
     color:inherit;
 }
 
+.fullEvent {
+    min-height:100vh;
+}
+
+.fullEvent p {
+    width:50%;
+    padding:2rem 0;
+}
+
 
 @media screen and (min-width: 768px) { 
     .events {
@@ -56,6 +65,7 @@
 .event {
     display:flex; 
     flex-direction: column; 
+    align-items: center;
 } 
 
 .event h3 {

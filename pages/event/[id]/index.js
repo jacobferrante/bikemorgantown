@@ -6,10 +6,10 @@ export default function event({event}) {
   return (
     <div className={styles.fullEvent}>
     <h2>{event.title}</h2>
-    <h2>{event.dateTime}</h2>
+    <h3>{event.dateTime}</h3>
     <h3>{event.location}</h3>
     <p>{event.description}</p>
-    <Link href="/#events">
+    <Link href="/events">
     <button>Go Back</button>
     </Link>
     </div>

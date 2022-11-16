@@ -1,15 +1,15 @@
 import Hero from '../components/Hero'
 import Services from '../components/Services'
 import Events from '../components/Events'
-import Footer from '../components/Footer'
 import { server } from '../config'
-import styles from '../styles/Home.module.css'
-
-export default function home({ events, services }) {
+export default function home({ events, services}) {
   return (
       <>      
       
-        <Hero /> 
+        <Hero 
+        image = "e3954ed3-6f35-4012-a840-d9d05c92ac60" 
+        />
+
         
         <Services services={services} />
         <Events events={events} />
@@ -26,10 +26,18 @@ export const getServerSideProps = async () => {
     const data2 = await res1.json()
     const services = data.data
     const events = data2.data
+   
+    
+    // Fetch hero data
+    const heroRes = await fetch (`${server}/hero`)
+    const heroData = await heroRes.json()
+    const hero = heroData.data
+
     return {
         props: {
            services,
-           events 
+           events,
+           hero
         }
     }
 }
