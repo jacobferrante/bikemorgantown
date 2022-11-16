@@ -27,7 +27,7 @@ export const getServerSideProps = async (context) => {
     const data = await res.json()
     const route = data.data
     return {
-        props: fullEvent{
+        props: {
             route
         }
     }
