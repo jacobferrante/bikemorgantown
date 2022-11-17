@@ -6,8 +6,8 @@ export default function Event({event}) {
         <Link href="/event/[id]" as={`/event/${event.id}`}>
           <h3>{event.title}</h3>
         </Link> 
-          <p><i class="fa-solid fa-location-dot"></i>   {event.location}</p>
-          <p><i class="fa-regular fa-clock"></i>     {event.dateTime}</p>
+          <p><i className="fa-solid fa-location-dot"></i>   {event.location}</p>
+          <p><i className="fa-regular fa-clock"></i>     {event.dateTime}</p>
       </>
     ) 
 }
