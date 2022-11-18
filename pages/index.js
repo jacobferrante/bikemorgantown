@@ -26,18 +26,11 @@ export const getServerSideProps = async () => {
     const data2 = await res1.json()
     const services = data.data
     const events = data2.data
-   
     
-    // Fetch hero data
-    const heroRes = await fetch (`${server}/hero`)
-    const heroData = await heroRes.json()
-    const hero = heroData.data
-
     return {
         props: {
            services,
-           events,
-           hero
+           events
         }
     }
 }

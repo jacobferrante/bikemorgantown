@@ -33,20 +33,22 @@
     align-items: flex-start;
 }
 
-
 .event h4 {
     font-size: 1.5rem;
     padding-bottom:1rem;
 }
 
-.headerStatement {
-    width:50vw;
-    font-size:2.5rem;
-    text-align: center;
-}
 
 .coloredText {
     color:#F0775E;
+}
+
+.headerStatement {
+    padding:0 2rem;
+}
+
+.event i {
+    padding-right:0.2rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -55,9 +57,16 @@
 
 @media screen and (min-width: 1268px) {
 
+.headerStatement {
+    max-width:75vw;
+    font-size:2.5rem;
+    text-align: center;
+}
 }
 
 @media screen and (min-width: 1768px) { 
-
+.headerStatement {
+    max-width:50vw;
+}
 }
 

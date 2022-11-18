@@ -1,6 +1,9 @@
 
-body {
+html, body {
     overflow-x: hidden;
+}
+
+body {
     color:#303030;
 }
 
@@ -10,6 +13,7 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
 }
 
 body {

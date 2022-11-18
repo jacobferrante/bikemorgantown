@@ -1,5 +1,7 @@
-export default function about() {
+export default function routes() {
     return (
-        <p>about page</p>
+        <>
+        <p>Routes Coming soon</p>
+        </>
     )
 }

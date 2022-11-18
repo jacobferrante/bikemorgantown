@@ -1,29 +1,36 @@
-import styles from '../../../styles/Events.module.css'
-import Link from 'next/link'
-import { server } from '../../../config'
+import styles from "../../../styles/Events.module.css";
+import Link from "next/link";
+import { server } from "../../../config";
 
-export default function event({event}) {
+export default function event({ event }) {
   return (
-    <div className={styles.fullEvent}>
-    <h2>{event.title}</h2>
-    <h3>{event.dateTime}</h3>
-    <h3>{event.location}</h3>
-    <p>{event.description}</p>
-    <Link href="/events">
-    <button>Go Back</button>
-    </Link>
+    <div className={styles.container}>
+      <div className={styles.fullEvent}>
+        <h2>{event.title}</h2>
+        <h3>
+          <i className="fa-regular fa-clock"></i>
+          {event.dateTime}
+        </h3>
+        <h3>
+          <i className="fa-solid fa-location-dot"></i>
+          {event.location}
+        </h3>
+        <p>{event.description}</p>
+        <Link href="/events">
+          <button>Go Back</button>
+        </Link>
+      </div>
     </div>
-  ) 
+  );
 }
-
 
 export const getServerSideProps = async (context) => {
-    const res = await fetch(`${server}/event/${context.params.id}`)
-    const data = await res.json()
-    const event = data.data
-    return {
-        props: {
-           event 
-        }
-    }
-}
+  const res = await fetch(`${server}/event/${context.params.id}`);
+  const data = await res.json();
+  const event = data.data;
+  return {
+    props: {
+      event,
+    },
+  };
+};
