@@ -1,38 +1,27 @@
-import styles from "../styles/Resources.module.css"
-import {server} from "../config/index"
+import styles from "../styles/Resources.module.css";
+import { server } from "../config/index";
 
-
-export default function about({resources}) {
-    return (
-
-        <div className={styles.container}>
-            <div>
-            
-            
-            <h1>Resources</h1>    
-                {resources.map((resource) => (
-                    <p>{resource.Name}</p>
-                ))}
-            
-            
-            
-            </div> 
-            <div>
-            <iframe src="https://www.google.com/maps/d/embed?mid=1eUDfm--ocNdhGWkpwq4F2JRfJLM&ehbc=2E312F&z=13" className={styles.map}></iframe>
-            </div> 
-        </div>
-    )
-
+export default function about({ resources }) {
+  return (
+    <div className={styles.container}>
+      <div>
+        <iframe
+          src="https://www.google.com/maps/d/embed?mid=1eUDfm--ocNdhGWkpwq4F2JRfJLM&ehbc=2E312F&z=13"
+          className={styles.map}
+        ></iframe>
+      </div>
+    </div>
+  );
 }
 
 export const getServerSideProps = async () => {
-    const res = await fetch(`${server}/resource`)
-    const data = await res.json()
-    const resources = data.data
+  const res = await fetch(`${server}/resource`);
+  const data = await res.json();
+  const resources = data.data;
 
-    return {
-        props: {
-        resources
-        }
-    }
-}
+  return {
+    props: {
+      resources,
+    },
+  };
+};

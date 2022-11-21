@@ -6,9 +6,9 @@ export default function Nav() {
     <nav className={styles.nav}>
         <ul>
           <Link href="/"><li>Home</li></Link>
-          <Link href="events"><li>Events</li></Link>
-          <Link href="routes"><li>Routes</li></Link>
-          <Link href="resources"><li>Resources</li></Link>
+          <Link href="/events"><li>Events</li></Link>
+          <Link href="/routes"><li>Routes</li></Link>
+          <Link href="/resources"><li>Resources</li></Link>
         </ul>
         <button>Menu</button>
     </nav>

@@ -1,7 +1,9 @@
+import styles from "../styles/Routes.module.css"
+
 export default function routes() {
     return (
-        <>
-        <p>Routes Coming soon</p>
-        </>
-    )
+    <div className={styles.container}>
+       <h2>Routes Coming Soon</h2> 
+    </div>
+    );
 }

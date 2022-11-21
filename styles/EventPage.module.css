@@ -1,72 +1,77 @@
 .container {
-    padding:10vh 0;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    gap:2rem;
+  padding: 10vh 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
 }
 
 .events {
-    display:flex;
-    width:80vw;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap:2rem;
+  display: flex;
+  width: 80vw;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .event {
-    background: #efefee;
-    border-radius: 24px;
-    height:40vh;
-    width:40vh;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  background: #efefee;
+  border-radius: 24px;
+  min-height: 40vh;
+  min-width: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
 }
 
 .events h1 {
-    display:flex;
-    align-items: flex-start;
+  display: flex;
+  align-items: flex-start;
+}
+
+.event h3 {
+  padding-bottom: 1rem;
 }
 
 .event h4 {
-    font-size: 1.5rem;
-    padding-bottom:1rem;
+  font-size: 1.25rem;
+  padding-bottom: 1rem;
 }
 
-
 .coloredText {
-    color:#F0775E;
+  color: #f0775e;
 }
 
 .headerStatement {
-    padding:0 2rem;
+  padding: 0 2rem;
 }
 
 .event i {
-    padding-right:0.2rem;
+  padding-right: 0.2rem;
 }
 
 @media screen and (min-width: 768px) {
-
+  .event {
+    height: 40vh;
+    width: 40vh;
+  }
 }
 
 @media screen and (min-width: 1268px) {
-
-.headerStatement {
-    max-width:75vw;
-    font-size:2.5rem;
+  .headerStatement {
+    max-width: 75vw;
+    font-size: 2.5rem;
     text-align: center;
-}
-}
-
-@media screen and (min-width: 1768px) { 
-.headerStatement {
-    max-width:50vw;
-}
+  }
 }
 
+@media screen and (min-width: 1768px) {
+  .headerStatement {
+    max-width: 50vw;
+  }
+}

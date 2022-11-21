@@ -4,4 +4,4 @@ BikeMorgantown is a community website for tracking events and information about 
 
 ## Figma
 
-![Home Page in Figma Design](https://github.com/jacobferrante/bikemorgantown/blob/main/bikemorgantown-figma.PNG "")
+![Home Page in Figma Design](https://github.com/jacobferrante/bikemorgantown/blob/main/figma/bikemorgantown-figma.PNG "")
