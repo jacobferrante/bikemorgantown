@@ -5,10 +5,6 @@ export default function about({ resources }) {
   return (
     <div className={styles.container}>
       <div>
-        <iframe
-          src="https://www.google.com/maps/d/embed?mid=1eUDfm--ocNdhGWkpwq4F2JRfJLM&ehbc=2E312F&z=13"
-          className={styles.map}
-        ></iframe>
       </div>
     </div>
   );
@@ -25,3 +21,12 @@ export const getServerSideProps = async () => {
     },
   };
 };
+
+
+
+// If I want to embed the commuter map
+
+//        <iframe
+//          src="https://www.google.com/maps/d/embed?mid=1eUDfm--ocNdhGWkpwq4F2JRfJLM&ehbc=2E312F&z=13"
+//          className={styles.map}
+//        ></iframe>

@@ -20,6 +20,7 @@ export default function event({ event }) {
           <i className="fa-solid fa-location-dot"></i>
           {event.location}
         </h3>
+
         <p>{event.description}</p>
         <Link href="/events">
           <button>Go Back</button>

@@ -9,22 +9,23 @@ export default function home({ events, services }) {
 
       <Services services={services} />
       <Events events={events} />
-
-        
-      
     </>
   );
 }
 
 export const getServerSideProps = async () => {
-  const res = await fetch(`${server}/service`);
-  const res1 = await fetch(
-    `${server}/event?filter[dateTime][_gt]=$NOW&limit=4&sort[]=-dateTime`
-  );
-  const data = await res.json();
-  const data2 = await res1.json();
-  const services = data.data;
-  const events = data2.data;
+  const [res, res1] = await Promise.all([
+    fetch(`${server}/service`),
+    fetch(`${server}/event?filter[dateTime][_gt]=$NOW&limit=4&sort[]=dateTime`)
+  ]);
+  const  [servicesData, eventsData] = await Promise.all([
+      res.json(),
+      res1.json(),
+  ]);
+  
+    
+const services = servicesData.data;
+const events = eventsData.data;
 
   return {
     props: {

@@ -1,3 +1,9 @@
+.container {
+    display:flex;
+    padding-bottom:2rem;
+}
+
+
 .fullRoute {
     padding-top:6rem;
     display:flex;
@@ -5,3 +11,46 @@
     justify-content: center;
     flex-direction: column;
 }
+
+
+.headerImage { 
+    max-width:90%;
+    filter: drop-shadow(0.25rem 0.25rem 0.25rem #7a7a7a);
+}
+
+.contentImage {
+    max-width:90%;
+    padding:2rem 0;
+    filter: drop-shadow(0.25rem 0.25rem 0.25rem #7a7a7a);
+}
+
+.headerText {
+    text-align: center;
+}
+
+
+.description {
+    font-size: 1.5rem;
+    padding: 2rem 1rem;
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 1268px) {
+
+}
+
+@media screen and (min-width: 1768px) {
+
+    .headerImage {
+        max-width: 1280px;
+        max-height: 720px;
+    }
+
+}
+

@@ -32,7 +32,7 @@ export default function about({ upcomingEvents, pastEvents }) {
             return (
               <div className={styles.event}>
                 <h3>{event.title}</h3>
-                <h4>
+               <h4>
                   <i className="fa-regular fa-clock"></i>
                   {dateStr}
                 </h4>
@@ -47,7 +47,6 @@ export default function about({ upcomingEvents, pastEvents }) {
             );
           })}
         </div>
-
         <h2>Past Events</h2>
         <div className={styles.events}>
           {pastEvents.map((event) => {
@@ -82,17 +81,23 @@ export default function about({ upcomingEvents, pastEvents }) {
   );
 }
 
+
+
 export const getServerSideProps = async () => {
-  const res = await fetch(
-    `${server}/event?filter[dateTime][_lt]=$NOW&sort=-dateTime&limit=6`
-  );
-  const res2 = await fetch(
-    `${server}/event?filter[dateTime][_gt]=$NOW&sort[]=-dateTime`
-  );
-  const data = await res.json();
-  const data2 = await res2.json();
-  const upcomingEvents = data2.data;
-  const pastEvents = data.data;
+  const [res, res1] = await Promise.all([
+    fetch(`${server}/event?filter[dateTime][_gt]=$NOW&sort[]=-dateTime`),
+    fetch(`${server}/event?filter[dateTime][_lt]=$NOW&sort=-dateTime&limit=6`)
+  ]);
+  const  [upcomingEventsData, pastEventsData] = await Promise.all([
+      res.json(),
+      res1.json(),
+  ]);
+  
+    
+const upcomingEvents = upcomingEventsData.data;
+const pastEvents = pastEventsData.data;
+
+
   return {
     props: {
       pastEvents,
